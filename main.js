@@ -21,7 +21,7 @@ $(".tab-slider--nav li").click(function () {
 //Submit button validation
 
 function valideaza(){
-  if($("#nod").val() && $("#moc").val() && $("#numberofdesk").val()) {
+  if($("#noe").val() && $("#moc").val() && $("#nod").val()) {
    //console.log("e okay");
    alert("e OK!");
   
@@ -50,40 +50,14 @@ $("#nod")
     var nod = $( this ).val();
     var res = nod*100;
     $("#res1").text( res );
-  })
-  .keyup();
-
-
-  $("#nod")
-  .keyup(function() {
-    var nod = $( this ).val();
-    var res = nod*67;
-    $("#res2").text( res );
-  })
-  .keyup();
-
-  $("#nod")
-  .keyup(function() {
-    var nod = $( this ).val();
-    var res = nod*50;
-    $("#res3").text( res );
-  })
-  .keyup();
-
-  $("#nod")
-  .keyup(function() {
-    var nod = $( this ).val();
-    var res = nod*44;
-    $("#res4").text( res );
-  })
-  .keyup();
-
-
-  $("#nod")
-  .keyup(function() {
-    var nod = $( this ).val();
-    var res = nod*34;
-    $("#res5").text( res );
+    var res2 = nod*67;
+    $("#res2").text( res2 );
+    var res3 = nod*50;
+    $("#res3").text( res3 );
+    var res4 = nod*44;
+    $("#res4").text( res4 );
+    var res5 = nod*34;
+    $("#res5").text( res5 );
   })
   .keyup();
 
