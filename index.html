@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="units.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    <title>Hello, world!</title>
+    <script src="https://kit.fontawesome.com/a4e5eb4761.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+    
+  <div class="container">
+  <div class="row taba">
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="taburi">
+
+            <ul class="nav nav-pills mb-3 nava" id="pills-tab" role="tablist">
+              <li class="nav-item " role="presentation" >
+                <button class="nav-link active tabs" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Downsizing</button>
+              </li>
+              <li class="nav-item " role="presentation">
+                <button class="nav-link tabs" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Team growth</button>
+              </li>
+           
+              
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--Tab1-->
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+        <form onsubmit="valideaza()" class="row g-3 formular">
+          <div class="col-md-6">
+            <label for="" class="form-label">Number of employess</label>
+            <input type="text"   id="nod" value="10" aria-label="First name" class="form-control place" placeholder="How many employears are currently working in your  organization?" required>
+          </div>
+          
+          <div class="col-md-4">
+            <label for="" class="form-label">Monthly office cost per sq/m:</label>
+            <input type="text"  id="moc" vale="10" aria-label="First name" class="form-control place" placeholder="The monthly cost of  your office per square meter">
+          </div>
+
+          <div class="col-md-1">
+            <button data-toggle="tooltip" title="Select this option if you are
+            not sure about your monthly
+            costs per square/meter. We
+            will calculate your result using
+            the average ($200), generated
+            from our own research and
+            customers' data.!" class="notsure">I'm not sure <span>?</span></button>
+          </div>
+         
+          
+          
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Number of desk</label>
+            <input type="text" class="form-control" id="numberofdesk">
+          </div>
+
+          <div class="col-md-6">
+
+            <div class="container">
+              <p>Currency</p>
+              <div class="tab-slider--nav">
+                <ul class="tab-slider--tabs">
+                  <li class="tab-slider--trigger active" rel="tab1">USD</li>
+                  <li class="tab-slider--trigger" rel="tab2">Euro</li>
+                </ul>
+              </div>
+             
+            </div>
+            
+          </div>
+      
+         
+
+          <div class="col-md-12">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Please enter your work email addres">
+          </div>
+      
+          <div class="col-md-12">
+            <!-- <button type="submit" class="btn btn-primary calculate">Calculate</button> -->
+           <input class="calculate" type="submit">
+          </div>
+      
+        </form>
+
+      </div>
+
+      <!--Tab2-->
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Number of employess</label>
+            <input type="text" aria-label="First name" class="form-control place" placeholder="How many employears are currently working in your  organization?">
+          </div>
+          
+          <div class="col-md-4">
+            <label for="inputEmail4" class="form-label">Monthly office cost per sq/m:</label>
+            <input type="text" aria-label="First name" class="form-control place" placeholder="The monthly cost of  your office per square meter">
+          </div>
+
+          <div class="col-md-2">
+            <button class="notsure">I'm not sure</button>
+          </div>
+          
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Number of desk</label>
+            <input type="text" id="desk" class="form-control" id="numberofdesk">
+          </div>
+
+          <div class="col-md-6">
+
+            <div class="container">
+              <p>Currency</p>
+              <div class="tab-slider--nav">
+                <ul class="tab-slider--tabs">
+                  <li class="tab-slider--trigger active" rel="tab1">USD</li>
+                  <li class="tab-slider--trigger" rel="tab2">Euro</li>
+                </ul>
+              </div>
+             
+            </div>
+            
+          </div>
+      
+         
+
+          <div class="col-md-12">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Please enter your work email addres">
+          </div>
+      
+          <div class="col-md-12">
+            <!-- <button type="submit" class="btn btn-primary calculate">Calculate</button> -->
+            <button class="calculate">Calculate my savings</button>
+          </div>
+      
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Table  Desktop -->
+
+ 
+
+  <div class="taba" id="move">
+
+  <div class="container table_desktop">
+    <div class="row">
+      <div class="col-md-12">
+        
+
+  <table class="table move">
+    <p class="table_description">Here's how much you can save by comitting to a smaller<br>
+      office space and reducing your employee:desk ratio:</p>
+    <thead>
+      <tr class="table-hide">
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Employee:desk ratio</th>
+        <td class="color_table1">1:1</td>
+        <td class="color_table1">1,5:1</td>
+        <td class="color_table1">2:1</td>
+        <td class="color_table1">2,3:1</td>
+        <td class="color_table1">3:1</td>
+      </tr>
+      <tr>
+        <th scope="row">Desks needed</th>
+        <td id="res1">100</td>
+        <td id="res2">67</td>
+        <td id="res3">50</td>
+        <td id="res4">44</td>
+        <td id="res5">34</td>
+
+      </tr>
+      <tr>
+        <th scope="row">Your savings</th>
+        <td>$0</td>
+        <td>$560000</td>
+        <td>$840000</td>
+        <td>$949565</td>
+        <td>$1120000</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button class="btn_table">Ready to start rightsizing?</button>
+
+
+
+</div>
+</div>
+</div>
+
+
+
+    <!---  mobile table  -->
+
+
+
+    <table class="table dispare_desktop">
+      <thead>
+        <tr>
+       
+          <th scope="col">Employee:desk ratio</th>
+          <th scope="col">Desks needed</th>
+          <th scope="col">Your savings</th>
+        </tr>
+      </thead>
+      <tbody class="tbody_mobile">
+
+        <tr>
+         
+          <td>1:1</td>
+          <td>100</td>
+          <td>$0</td>
+        </tr>
+        <tr>
+        
+          <td>1,5:1</td>
+          <td>67</td>
+          <td>$560000</td>
+        </tr>
+        <tr>
+          
+          <td>2:1</td>
+          <td>50</td>
+          <td>$840000</td>
+        </tr>
+        <tr>
+        
+          <td>2,3:1</td>
+          <td>40</td>
+          <td>$949565</td>
+        </tr>
+        <tr>
+        
+          <td>3:1</td>
+          <td>34</td>
+          <td>$1120000</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+
+
+
+  
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/a4e5eb4761.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>
+
+
+ 
+        
